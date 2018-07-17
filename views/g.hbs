@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/bootstrap3.3.7.min.css">
+    <link href="/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <script src="/js/jquery3.3.1.min.js"></script>
+    <script src="/js/bootstrap3.3.7.min.js"></script>
+
+</head>
+<body>
+    <div class="col-12 col-md-3 clientBox">
+        <div class="client-card">
+            <div class="row">
+                <div class="col-sm-1 leftBtn">
+                    <a href="/rutas/clientes/1" class="btnActionDetails">
+                        <i class="fa fa-exclamation"></i>
+                    </a>
+                </div>
+                <div class="col-sm-1 rightBtn">
+                    <a href="#" onclick="deleteClient(1)" class="btnActionDelete">
+                        <i class="fa fa-remove"></i>
+                    </a>
+                </div>
+                <div class="card-body text-center">
+                    <div class="client-avatar">
+                        <a href="/rutas/clientes/actualizarCliente/1">
+                            <img class="clientImage" alt="Imagen del Cliente" src="/images/profile256.png">
+                        </a>
+                    </div>
+                    <h3 class="clientsTitle">Luis Cuevas</h3>
+
+                        <a href="/rutas/prestamos/alCliente/1" class="btn btn-primary btnPrestamo">Préstamos</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/moment-with-locales.js"></script>
+    <script src="/js/bootstrap3.3.7.min.js"></script>
+<script>
+    let date = new Date(), another = new Date('2018-07-13');
+    let subtraction = Math.floor(date-another), days = 0;
+    while (subtraction>86400000){
+        subtraction-=86400000;
+        days++;
+    }
+    console.log(days);
+
+</script>
+</body>
+</html>

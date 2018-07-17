@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recibo - CueTori</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Glance Design Dashboard Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link rel="stylesheet" href="/css/bootstrap3.3.7.min.css" type="text/css" media="screen">
+    <link href="/css/style.css" rel='stylesheet' type='text/css'/>
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <script src="/js/jquery3.3.1.min.js"></script>
+    <script src="/js/custom.js"></script>
+</head>
+<body id="receiptBody">
+<div class="page reportes-wrapper">
+    <section>
+        <div class="receiptBox">
+            <h1>CueTori</h1>
+            <div>{{user.fullName}}</div>
+            <i>Tel: (809)578-6477</i>
+            <br/>
+            <div class="header">
+                <div class="numero">
+                    No. <span>{{payment.no}}</span>
+                </div>
+                <h1>RECIBO DE PAGO</h1>
+                <div class="fecha">
+                    <span>{{payment.date}}</span>
+                </div>
+            </div>
+            <section>
+                <p>
+                    <span>RECIBIMOS DE:</span>
+                    <span><b>{{client.fullName}}</b></span>
+                </p>
+                <p>
+                    <span>LA SUMA DE:</span>
+                    <span class="suma">{{payment.text}} PESOS</span>
+                    <span>MONTO:</span>
+                    <span>{{payment.total}}</span>
+                </p>
+                <p>
+                    <span>POR CONCEPTO DE:</span>
+                    <span style="width: 82.6%; display: inline-block;">PAGO CUOTA NO. {{payment.dues}}</span>
+                </p>
+                <table class="table table-bordered" style="width: 100%">
+                    <thead>
+                        <tr>
+                            <th>Cuota</th>
+                            <th>Monto</th>
+                            <th>Mora</th>
+                            <th>Total</th>
+                            <th>Capital Restante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{payment.cuota}}</td>
+                            <td>{{payment.monto}}</td>
+                            <td>{{payment.delay}}</td>
+                            <td>{{payment.total}}</td>
+                            <td>{{payment.debt}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="recFooter" style="margin: auto; width: 95%">
+                <div class="modoPago">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Total Recibo:</td>
+                            <td>{{payment.total}}</td>
+                        </tr>
+                        <tr>
+                            <td>Balance Pendiente:</td>
+                            <td>{{payment.debt}}</td>
+                        </tr>
+                        <tr>
+                            <td>Modo de Pago:</td>
+                            <td>{{payment.paymentMethod}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="firma">
+                    <span>FIRMA RESPONSABLE</span>
+                </div>
+            </div>
+        </div>
+        <div class="receiptBox">
+            <h1>CueTori</h1>
+            <div>{{user.fullName}}</div>
+            <i>Tel: (809)578-6477</i>
+            <br/>
+            <div class="header">
+                <div class="numero">
+                    No. <span>{{payment.no}}</span>
+                </div>
+                <h1>RECIBO DE PAGO</h1>
+                <div class="fecha">
+                    <span>{{payment.date}}</span>
+                </div>
+            </div>
+            <section>
+                <p>
+                    <span>RECIBIMOS DE:</span>
+                    <span><b>{{client.fullName}}</b></span>
+                </p>
+                <p>
+                    <span>LA SUMA DE:</span>
+                    <span class="suma">{{payment.text}} PESOS</span>
+                    <span>MONTO:</span>
+                    <span>{{payment.total}}</span>
+                </p>
+                <p>
+                    <span>POR CONCEPTO DE:</span>
+                    <span style="width: 82.6%; display: inline-block;">PAGO CUOTA NO. {{payment.dues}}</span>
+                </p>
+                <table class="table table-bordered" style="width: 100%">
+                    <thead>
+                    <tr>
+                        <th>Cuota</th>
+                        <th>Monto</th>
+                        <th>Mora</th>
+                        <th>Total</th>
+                        <th>Capital Restante</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>{{payment.cuota}}</td>
+                        <td>{{payment.monto}}</td>
+                        <td>{{payment.delay}}</td>
+                        <td>{{payment.total}}</td>
+                        <td>{{payment.debt}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="recFooter" style="margin: auto; width: 95%">
+                <div class="modoPago">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Total Recibo:</td>
+                            <td>{{payment.total}}</td>
+                        </tr>
+                        <tr>
+                            <td>Balance Pendiente:</td>
+                            <td>{{payment.debt}}</td>
+                        </tr>
+                        <tr>
+                            <td>Modo de Pago:</td>
+                            <td>{{payment.paymentMethod}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="firma">
+                    <span>FIRMA RESPONSABLE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--<script>-->
+<!--vm.layoutRecibo();-->
+<!--setTimeout(imprimir, 1000)-->
+<!--function imprimir() {-->
+<!--window.print();-->
+<!--}-->
+<!--</script>-->
+<script src="/js/moment-with-locales.js"></script>
+<script src="/js/bootstrap3.3.7.min.js"></script>
+</body>
+</html>
