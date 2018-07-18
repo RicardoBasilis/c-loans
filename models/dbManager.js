@@ -55,7 +55,7 @@ module.exports.defaultTables = function defaultTables() {
     }).then(function () {
         if (total.length === 0) {
             sequelize.sync({force: true}).then(function () {
-                hashIt('super').then(function (fromResolve) {
+                hashIt('test').then(function (fromResolve) {
                     hashed = fromResolve;
                     //Privilegios por defecto
                     models.Privilege.bulkCreate([
